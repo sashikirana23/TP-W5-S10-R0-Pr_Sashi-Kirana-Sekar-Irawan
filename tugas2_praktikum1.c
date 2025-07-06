@@ -24,11 +24,8 @@ int main() {
     for (i = 0; i < 5; i++) {
         if (*(ptr + i) > tertinggi) {
             tertinggi = *(ptr + i);
-        } else if (*(ptr + i) < terendah) {
+        } else if(*(ptr + i) < terendah) {
             terendah = *(ptr + i);
-        } else {
-            // Jika nilai sama dengan tertinggi atau terendah maka tidak ada perubahan
-            printf("Nilai ke-%d (%d) tidak mempengaruhi tertinggi/terendah.\n", i + 1, *(ptr + i));
         }
         total += *(ptr + i);
     }
